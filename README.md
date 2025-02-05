@@ -115,7 +115,7 @@ This feature helps manage large reference libraries by ensuring:
 #### **Command Usage**
 
 ```bash
-python cli.py --clean-references --tex-dir <path-to-tex-files> --bib-dir <path-to-bib-files> --output-dir <path-to-output>
+d2b --clean-references --tex-dir <path-to-tex-files> --bib-dir <path-to-bib-files> --output-dir <path-to-output>
 ```
 
 #### **Arguments**
@@ -125,17 +125,6 @@ python cli.py --clean-references --tex-dir <path-to-tex-files> --bib-dir <path-t
 | `--tex-dir`    | Path to the directory containing `.tex` files where references (`\cite`) are located.       |
 | `--bib-dir`    | Path to the directory containing `.bib` files to be cleaned and matched.                    |
 | `--output-dir` | Path to save the cleaned references and unresolved entries.                                 |
-
----
-
-#### **Example**
-
-```bash
-python cli.py --clean-references \
-    --tex-dir /path/to/my-latex/tex-files \
-    --bib-dir /path/to/my-latex/bib-files \
-    --output-dir /path/to/output
-```
 
 ---
 
